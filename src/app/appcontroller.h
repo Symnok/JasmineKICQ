@@ -39,6 +39,7 @@ class AppController : public QObject
     Q_PROPERTY(int port READ port WRITE setPort NOTIFY settingsChanged)
     Q_PROPERTY(QString version READ version CONSTANT)
     Q_PROPERTY(QString language READ language WRITE setLanguage NOTIFY settingsChanged)
+    Q_PROPERTY(bool notifications READ notifications WRITE setNotifications NOTIFY settingsChanged)
     Q_PROPERTY(bool vibrate READ vibrate WRITE setVibrate NOTIFY settingsChanged)
     Q_PROPERTY(bool popups READ popups WRITE setPopups NOTIFY settingsChanged)
     Q_PROPERTY(bool autoConnect READ autoConnect WRITE setAutoConnect NOTIFY settingsChanged)
@@ -83,6 +84,8 @@ public:
     QString version() const;
     QString language() const;
     void setLanguage(const QString &lang);
+    bool notifications() const;
+    void setNotifications(bool on);
     bool vibrate() const;
     void setVibrate(bool on);
     bool popups() const;

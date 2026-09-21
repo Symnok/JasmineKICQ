@@ -63,7 +63,25 @@ Page {
             width: parent.width
 
             ListItem {
+                id: notifyItem
+                ListItemText {
+                    anchors { left: notifyItem.paddingItem.left; right: notifySwitch.left; verticalCenter: parent.verticalCenter }
+                    role: "Title"
+                    text: qsTr("Notifications")
+                    wrapMode: Text.Wrap
+                }
+                Switch {
+                    id: notifySwitch
+                    anchors { right: notifyItem.paddingItem.right; verticalCenter: parent.verticalCenter }
+                    checked: app.notifications
+                    onCheckedChanged: if (checked != app.notifications) app.notifications = checked
+                }
+                onClicked: notifySwitch.checked = !notifySwitch.checked
+            }
+            ListItem {
                 id: popupsItem
+                enabled: app.notifications
+                opacity: enabled ? 1 : 0.4
                 ListItemText {
                     anchors { left: popupsItem.paddingItem.left; right: popupsSwitch.left; verticalCenter: parent.verticalCenter }
                     role: "Title"
@@ -80,6 +98,8 @@ Page {
             }
             ListItem {
                 id: vibrateItem
+                enabled: app.notifications
+                opacity: enabled ? 1 : 0.4
                 ListItemText {
                     anchors { left: vibrateItem.paddingItem.left; right: vibrateSwitch.left; verticalCenter: parent.verticalCenter }
                     role: "Title"
@@ -100,7 +120,7 @@ Page {
                 wrapMode: Text.Wrap
                 font.pixelSize: platformStyle.fontSizeSmall
                 color: platformStyle.colorNormalMid
-                text: qsTr("Used when a message arrives while another application is in front. JasmineKICQ stays connected in the background.")
+                text: qsTr("For messages that arrive while another application is in front: the \"new messages\" dialog, the popup and the vibration. JasmineKICQ stays connected in the background either way.")
             }
             Item { width: 1; height: platformStyle.paddingLarge }
 

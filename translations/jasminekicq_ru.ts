@@ -31,238 +31,238 @@
 <context>
     <name>AppController</name>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="262" />
+        <location filename="../src/app/appcontroller.cpp" line="266" />
         <source>Enter your UIN and password.</source>
         <translation>Введите UIN и пароль.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="353" />
+        <location filename="../src/app/appcontroller.cpp" line="357" />
         <source>Connection lost: %1. Reconnecting...</source>
         <translation>Соединение потеряно: %1. Переподключение...</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="398" />
+        <location filename="../src/app/appcontroller.cpp" line="402" />
         <source>%1 (%2) asks for your authorization.</source>
         <translation>%1 (%2) запрашивает авторизацию.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="399" />
+        <location filename="../src/app/appcontroller.cpp" line="403" />
         <source>%1 (%2) asks for your authorization: %3</source>
         <translation>%1 (%2) запрашивает авторизацию: %3</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="401" />
+        <location filename="../src/app/appcontroller.cpp" line="405" />
         <source>asks for your authorization</source>
         <translation>запрашивает авторизацию</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="416" />
+        <location filename="../src/app/appcontroller.cpp" line="420" />
         <source>%1 authorized you.</source>
         <translation>%1 авторизовал(а) вас.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="416" />
+        <location filename="../src/app/appcontroller.cpp" line="420" />
         <source>%1 declined your authorization request.</source>
         <translation>%1 отклонил(а) запрос авторизации.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="421" />
+        <location filename="../src/app/appcontroller.cpp" line="425" />
         <source>%1 added you to their contact list.</source>
         <translation>%1 добавил(а) вас в свой список контактов.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="428" />
+        <location filename="../src/app/appcontroller.cpp" line="432" />
         <source>Contact %1 added.</source>
         <translation>Контакт %1 добавлен.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="429" />
+        <location filename="../src/app/appcontroller.cpp" line="433" />
         <source>%1 is already in the list.</source>
         <translation>%1 уже есть в списке.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="429" />
+        <location filename="../src/app/appcontroller.cpp" line="433" />
         <source>Could not add %1 (error %2).</source>
         <translation>Не удалось добавить %1 (ошибка %2).</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="432" />
+        <location filename="../src/app/appcontroller.cpp" line="436" />
         <source>Contact removed.</source>
         <translation>Контакт удалён.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="432" />
+        <location filename="../src/app/appcontroller.cpp" line="436" />
         <source>Could not remove the contact (error %1).</source>
         <translation>Не удалось удалить контакт (ошибка %1).</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="435" />
+        <location filename="../src/app/appcontroller.cpp" line="439" />
         <source>Could not rename the contact (error %1).</source>
         <translation>Не удалось переименовать контакт (ошибка %1).</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="438" />
+        <location filename="../src/app/appcontroller.cpp" line="442" />
         <source>Group "%1" created.</source>
         <translation>Группа «%1» создана.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="439" />
+        <location filename="../src/app/appcontroller.cpp" line="443" />
         <source>Group "%1" already exists.</source>
         <translation>Группа «%1» уже существует.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="439" />
+        <location filename="../src/app/appcontroller.cpp" line="443" />
         <source>Could not create the group (error %1).</source>
         <translation>Не удалось создать группу (ошибка %1).</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="442" />
+        <location filename="../src/app/appcontroller.cpp" line="446" />
         <source>Could not rename the group (error %1).</source>
         <translation>Не удалось переименовать группу (ошибка %1).</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="482" />
+        <location filename="../src/app/appcontroller.cpp" line="486" />
         <source>A UIN is a number.</source>
         <translation>UIN — это число.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="485" />
-        <location filename="../src/app/appcontroller.cpp" line="491" />
-        <location filename="../src/app/appcontroller.cpp" line="499" />
-        <location filename="../src/app/appcontroller.cpp" line="505" />
-        <location filename="../src/app/appcontroller.cpp" line="512" />
-        <location filename="../src/app/appcontroller.cpp" line="522" />
-        <location filename="../src/app/appcontroller.cpp" line="594" />
+        <location filename="../src/app/appcontroller.cpp" line="489" />
+        <location filename="../src/app/appcontroller.cpp" line="495" />
+        <location filename="../src/app/appcontroller.cpp" line="503" />
+        <location filename="../src/app/appcontroller.cpp" line="509" />
+        <location filename="../src/app/appcontroller.cpp" line="516" />
+        <location filename="../src/app/appcontroller.cpp" line="526" />
+        <location filename="../src/app/appcontroller.cpp" line="598" />
         <source>Not connected.</source>
         <translation>Нет соединения.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="514" />
+        <location filename="../src/app/appcontroller.cpp" line="518" />
         <source>This group cannot be renamed.</source>
         <translation>Эту группу нельзя переименовать.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="535" />
+        <location filename="../src/app/appcontroller.cpp" line="539" />
         <source>My profile</source>
         <translation>Мой профиль</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="562" />
+        <location filename="../src/app/appcontroller.cpp" line="566" />
         <source>UIN</source>
         <translation>UIN</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="563" />
+        <location filename="../src/app/appcontroller.cpp" line="567" />
         <source>Nickname</source>
         <translation>Ник</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="564" />
+        <location filename="../src/app/appcontroller.cpp" line="568" />
         <source>First name</source>
         <translation>Имя</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="565" />
+        <location filename="../src/app/appcontroller.cpp" line="569" />
         <source>Last name</source>
         <translation>Фамилия</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="566" />
+        <location filename="../src/app/appcontroller.cpp" line="570" />
         <source>Gender</source>
         <translation>Пол</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="566" />
+        <location filename="../src/app/appcontroller.cpp" line="570" />
         <source>female</source>
         <translation>женский</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="566" />
+        <location filename="../src/app/appcontroller.cpp" line="570" />
         <source>male</source>
         <translation>мужской</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="567" />
+        <location filename="../src/app/appcontroller.cpp" line="571" />
         <source>Age</source>
         <translation>Возраст</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="572" />
+        <location filename="../src/app/appcontroller.cpp" line="576" />
         <source>Birthday</source>
         <translation>День рождения</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="574" />
+        <location filename="../src/app/appcontroller.cpp" line="578" />
         <source>E-mail</source>
         <translation>E-mail</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="575" />
+        <location filename="../src/app/appcontroller.cpp" line="579" />
         <source>City</source>
         <translation>Город</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="576" />
+        <location filename="../src/app/appcontroller.cpp" line="580" />
         <source>Region</source>
         <translation>Регион</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="577" />
+        <location filename="../src/app/appcontroller.cpp" line="581" />
         <source>Phone</source>
         <translation>Телефон</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="578" />
+        <location filename="../src/app/appcontroller.cpp" line="582" />
         <source>Mobile</source>
         <translation>Мобильный</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="579" />
+        <location filename="../src/app/appcontroller.cpp" line="583" />
         <source>Homepage</source>
         <translation>Сайт</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="580" />
+        <location filename="../src/app/appcontroller.cpp" line="584" />
         <source>Company</source>
         <translation>Компания</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="581" />
+        <location filename="../src/app/appcontroller.cpp" line="585" />
         <source>Department</source>
         <translation>Отдел</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="582" />
+        <location filename="../src/app/appcontroller.cpp" line="586" />
         <source>Position</source>
         <translation>Должность</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="583" />
+        <location filename="../src/app/appcontroller.cpp" line="587" />
         <source>About</source>
         <translation>О программе</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="587" />
+        <location filename="../src/app/appcontroller.cpp" line="591" />
         <source>The server has no details about this user.</source>
         <translation>Сервер ничего не знает об этом пользователе.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="587" />
+        <location filename="../src/app/appcontroller.cpp" line="591" />
         <source>No reply from the server.</source>
         <translation>Сервер не ответил.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="595" />
+        <location filename="../src/app/appcontroller.cpp" line="599" />
         <source>Please authorize me</source>
         <translation>Пожалуйста, авторизуйте меня</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="596" />
+        <location filename="../src/app/appcontroller.cpp" line="600" />
         <source>Authorization request sent.</source>
         <translation>Запрос авторизации отправлен.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="607" />
+        <location filename="../src/app/appcontroller.cpp" line="611" />
         <source>Copied.</source>
         <translation>Скопировано.</translation>
     </message>
@@ -671,12 +671,12 @@
 <context>
     <name>Notifier</name>
     <message>
-        <location filename="../src/app/notifier.cpp" line="162" />
+        <location filename="../src/app/notifier.cpp" line="171" />
         <source>JasmineKICQ: new message</source>
         <translation>JasmineKICQ: новое сообщение</translation>
     </message>
     <message>
-        <location filename="../src/app/notifier.cpp" line="162" />
+        <location filename="../src/app/notifier.cpp" line="171" />
         <source>JasmineKICQ: %1 new messages</source>
         <translation>JasmineKICQ: новых сообщений: %1</translation>
     </message>
@@ -685,7 +685,7 @@
     <name>SettingsPage</name>
     <message>
         <location filename="../qml/SettingsPage.qml" line="15" />
-        <location filename="../qml/SettingsPage.qml" line="130" />
+        <location filename="../qml/SettingsPage.qml" line="150" />
         <source>App language</source>
         <translation>Язык приложения</translation>
     </message>
@@ -703,31 +703,36 @@
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="70" />
+        <source>Notifications</source>
+        <translation>Уведомления</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="88" />
         <source>Popup for new messages</source>
         <translation>Уведомление о новых сообщениях</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="86" />
+        <location filename="../qml/SettingsPage.qml" line="106" />
         <source>Vibrate</source>
         <translation>Вибрация</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="103" />
-        <source>Used when a message arrives while another application is in front. JasmineKICQ stays connected in the background.</source>
-        <translation>Срабатывает, когда сообщение приходит, пока открыто другое приложение. JasmineKICQ остаётся подключённым в фоне.</translation>
+        <location filename="../qml/SettingsPage.qml" line="123" />
+        <source>For messages that arrive while another application is in front: the "new messages" dialog, the popup and the vibration. JasmineKICQ stays connected in the background either way.</source>
+        <translation>Для сообщений, приходящих, пока открыто другое приложение: диалог «новые сообщения», всплывающее уведомление и вибрация. JasmineKICQ в любом случае остаётся подключённым в фоне.</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="112" />
+        <location filename="../qml/SettingsPage.qml" line="132" />
         <source>Connect on start</source>
         <translation>Подключаться при запуске</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="151" />
+        <location filename="../qml/SettingsPage.qml" line="171" />
         <source>Takes effect after the app is restarted.</source>
         <translation>Вступает в силу после перезапуска приложения.</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="161" />
+        <location filename="../qml/SettingsPage.qml" line="181" />
         <source>Server: %1:%2 (change it on the sign-in page after signing out).</source>
         <translation>Сервер: %1:%2 (меняется на странице входа после выхода).</translation>
     </message>

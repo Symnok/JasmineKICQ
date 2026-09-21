@@ -36,6 +36,7 @@ PageStackWindow {
     Component { id: contactsPage; ContactsPage {} }
     Component { id: chatPage; ChatPage {} }
     Component { id: infoPage; ContactInfoPage {} }
+    Component { id: settingsPage; SettingsPage {} }
 
     function route() {
         if (app.state == "login") {
@@ -90,7 +91,9 @@ PageStackWindow {
             else if (step == 7) app.takeScreenshot("contacts-again")
             else if (step == 8) { if (app.showContactInfo(app.autotestUin)) pageStack.push(infoPage) }
             else if (step == 10) app.takeScreenshot("info")
-            else if (step == 11) Qt.quit()
+            else if (step == 11) { pageStack.pop(); pageStack.push(settingsPage) }
+            else if (step == 12) app.takeScreenshot("settings")
+            else if (step == 13) Qt.quit()
         }
         function statusDialogProbe() { }
     }

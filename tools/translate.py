@@ -106,8 +106,9 @@ RU = {
     "JasmineKICQ: new message": "JasmineKICQ: новое сообщение",
     "JasmineKICQ: %1 new messages": "JasmineKICQ: новых сообщений: %1",
     "Vibrate": "Вибрация",
-    "Used when a message arrives while another application is in front. JasmineKICQ stays connected in the background.":
-        "Срабатывает, когда сообщение приходит, пока открыто другое приложение. JasmineKICQ остаётся подключённым в фоне.",
+    "For messages that arrive while another application is in front: the \"new messages\" dialog, the popup and the vibration. JasmineKICQ stays connected in the background either way.":
+        "Для сообщений, приходящих, пока открыто другое приложение: диалог «новые сообщения», всплывающее уведомление и вибрация. JasmineKICQ в любом случае остаётся подключённым в фоне.",
+    "Notifications": "Уведомления",
     "Connect on start": "Подключаться при запуске",
     "Takes effect after the app is restarted.": "Вступает в силу после перезапуска приложения.",
     "Server: %1:%2 (change it on the sign-in page after signing out).": "Сервер: %1:%2 (меняется на странице входа после выхода).",
@@ -252,8 +253,9 @@ UK = {
     "JasmineKICQ: new message": "JasmineKICQ: нове повідомлення",
     "JasmineKICQ: %1 new messages": "JasmineKICQ: нових повідомлень: %1",
     "Vibrate": "Вібрація",
-    "Used when a message arrives while another application is in front. JasmineKICQ stays connected in the background.":
-        "Спрацьовує, коли повідомлення надходить, поки відкрито інший застосунок. JasmineKICQ залишається підключеним у фоні.",
+    "For messages that arrive while another application is in front: the \"new messages\" dialog, the popup and the vibration. JasmineKICQ stays connected in the background either way.":
+        "Для повідомлень, що надходять, поки відкрито інший застосунок: діалог «нові повідомлення», спливаюче сповіщення та вібрація. JasmineKICQ у будь-якому разі залишається підключеним у фоні.",
+    "Notifications": "Сповіщення",
     "Connect on start": "Підключатися під час запуску",
     "Takes effect after the app is restarted.": "Набуває чинності після перезапуску застосунку.",
     "Server: %1:%2 (change it on the sign-in page after signing out).": "Сервер: %1:%2 (змінюється на сторінці входу після виходу).",

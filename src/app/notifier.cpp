@@ -116,7 +116,7 @@ namespace
 #endif
 
 Notifier::Notifier(QObject *parent)
-    : QObject(parent), m_vibrate(true), m_popups(true), m_pending(0), m_query(0)
+    : QObject(parent), m_enabled(true), m_vibrate(true), m_popups(true), m_pending(0), m_query(0)
 {
 #ifdef Q_OS_SYMBIAN
     PendingQuery *q = 0;
@@ -133,8 +133,16 @@ Notifier::~Notifier()
 #endif
 }
 
+void Notifier::setEnabled(bool on)
+{
+    if (m_enabled == on) return;
+    m_enabled = on;
+    showPending();   // takes the query and the envelope down, or brings them back
+}
+
 void Notifier::notify(const QString &title, const QString &text)
 {
+    if (!m_enabled) return;
 #ifdef Q_OS_SYMBIAN
     if (m_popups) {
         QString t = title;
@@ -150,6 +158,7 @@ void Notifier::notify(const QString &title, const QString &text)
 
 void Notifier::vibrate(int ms)
 {
+    if (!m_enabled) return;
 #ifdef Q_OS_SYMBIAN
     if (m_vibrate) TRAP_IGNORE(vibrateL(ms));
 #else
@@ -167,6 +176,12 @@ void Notifier::setPendingCount(int count)
     if (count < 0) count = 0;
     if (count == m_pending) return;
     m_pending = count;
+    showPending();
+}
+
+void Notifier::showPending()
+{
+    int count = m_enabled ? m_pending : 0;
 #ifdef Q_OS_SYMBIAN
     PendingQuery *q = static_cast<PendingQuery *>(m_query);
     if (q) {

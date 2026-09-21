@@ -41,6 +41,7 @@ namespace
     const char *const KeyAutoConnect = "account/autoConnect";
     const char *const KeyStatus = "account/status";
     const char *const KeyLanguage = "ui/language";
+    const char *const KeyNotifications = "ui/notifications";
     const char *const KeyVibrate = "ui/vibrate";
     const char *const KeyPopups = "ui/popups";
     const char *const KeyShowOffline = "ui/showOffline";
@@ -66,6 +67,7 @@ AppController::AppController(QObject *parent)
     m_contacts = new ContactsModel(m_session, this);
     m_chat = new MessagesModel(m_session, m_contacts, this);
     m_notifier = new Notifier(this);
+    m_notifier->setEnabled(notifications());
     m_notifier->setVibrate(vibrate());
     m_notifier->setPopups(popups());
     m_contacts->setShowOffline(m_settings.value(QLatin1String(KeyShowOffline), true).toBool());
@@ -146,6 +148,8 @@ void AppController::setServer(const QString &s) { m_settings.setValue(QLatin1Str
 int AppController::port() const { return m_settings.value(QLatin1String(KeyPort), DefaultPort).toInt(); }
 void AppController::setPort(int p) { m_settings.setValue(QLatin1String(KeyPort), p > 0 ? p : DefaultPort); emit settingsChanged(); }
 QString AppController::version() const { return QLatin1String(KICQ_STR(APP_VERSION)); }
+bool AppController::notifications() const { return m_settings.value(QLatin1String(KeyNotifications), true).toBool(); }
+void AppController::setNotifications(bool on) { m_settings.setValue(QLatin1String(KeyNotifications), on); m_notifier->setEnabled(on); emit settingsChanged(); }
 bool AppController::vibrate() const { return m_settings.value(QLatin1String(KeyVibrate), true).toBool(); }
 void AppController::setVibrate(bool on) { m_settings.setValue(QLatin1String(KeyVibrate), on); m_notifier->setVibrate(on); emit settingsChanged(); }
 bool AppController::popups() const { return m_settings.value(QLatin1String(KeyPopups), true).toBool(); }

@@ -19,6 +19,9 @@ public:
     explicit Notifier(QObject *parent = 0);
     ~Notifier();
 
+    /// The master switch: off means no popup, no vibration, no "new messages" query and
+    /// no envelope (the unread badges in the list are not affected).
+    void setEnabled(bool on);
     void setVibrate(bool on) { m_vibrate = on; }
     void setPopups(bool on) { m_popups = on; }
 
@@ -32,6 +35,8 @@ public:
     int pendingCount() const { return m_pending; }
 
 private:
+    void showPending();
+    bool m_enabled;
     bool m_vibrate;
     bool m_popups;
     int m_pending;
