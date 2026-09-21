@@ -22,6 +22,7 @@ class QNetworkSession;
 class QTimer;
 class QDeclarativeView;
 class QDateTime;
+struct IcqUserInfo;
 
 class AppController : public QObject
 {
@@ -50,8 +51,17 @@ class AppController : public QObject
     Q_PROPERTY(QString notice READ notice NOTIFY noticeChanged)
     Q_PROPERTY(QString authRequestUin READ authRequestUin NOTIFY authRequestChanged)
     Q_PROPERTY(QString authRequestText READ authRequestText NOTIFY authRequestChanged)
+    /// The profile page: whose details, and the [{label, value}] rows once they arrived.
+    Q_PROPERTY(QString infoUin READ infoUin NOTIFY infoChanged)
+    Q_PROPERTY(QString infoTitle READ infoTitle NOTIFY infoChanged)
+    Q_PROPERTY(QString infoIcon READ infoIcon NOTIFY infoChanged)
+    Q_PROPERTY(QVariantList infoRows READ infoRows NOTIFY infoChanged)
+    Q_PROPERTY(bool infoLoading READ infoLoading NOTIFY infoChanged)
+    Q_PROPERTY(QString infoNote READ infoNote NOTIFY infoChanged)
     /// Desktop testing: true when KICQ_SHOT_DIR is set; main.qml then walks the pages and shoots them.
     Q_PROPERTY(bool autotest READ autotest CONSTANT)
+    /// The contact the autotest talks to (KICQ_TEST_UIN, default 93444 - never a bot).
+    Q_PROPERTY(QString autotestUin READ autotestUin CONSTANT)
     /// The last log lines (warnings, QML errors, notifier results) for the About page.
     Q_PROPERTY(QString logTail READ logTail NOTIFY logChanged)
 public:
@@ -89,7 +99,14 @@ public:
     QString authRequestUin() const { return m_authUin; }
     QString authRequestText() const { return m_authText; }
     bool autotest() const;
+    QString autotestUin() const;
     QString logTail() const;
+    QString infoUin() const { return m_infoUin; }
+    QString infoTitle() const;
+    QString infoIcon() const;
+    QVariantList infoRows() const { return m_infoRows; }
+    bool infoLoading() const { return m_infoLoading; }
+    QString infoNote() const { return m_infoNote; }
     static void appendLog(const QString &line);
 
     /// Opens the network, then signs in with the saved account or shows the sign-in page.
@@ -111,6 +128,9 @@ public slots:
     void removeContact(const QString &uin);
     void renameContact(const QString &uin, const QString &nick);
     void addGroup(const QString &name);
+    void renameGroup(int groupId, const QString &name);
+    /// Asks the server for the user's profile; returns false (with a notice) when offline.
+    bool showContactInfo(const QString &uin);
     void requestAuthorization(const QString &uin);
     void answerAuthorization(bool grant);
     void openUrl(const QString &url);
@@ -131,6 +151,7 @@ signals:
     /// A message arrived for a chat that is not open (the list page may want to react).
     void messageArrived(const QString &uin);
     void logChanged();
+    void infoChanged();
 
 private slots:
     void onNetworkOpened();
@@ -143,6 +164,7 @@ private slots:
     void onAuthReplied(const QString &uin, bool granted);
     void onYouWereAdded(const QString &uin);
     void onSsiFinished(int request, const QString &name, bool ok, int code);
+    void onUserInfo(const IcqUserInfo &info);
     void onSendFailed(const QString &error);
     void onReconnectTimer();
     void onSessionLog(const QString &line);
@@ -176,6 +198,9 @@ private:
     bool m_everOnline;
     int m_reconnectDelay;
     QString m_authUin, m_authText;
+    QString m_infoUin, m_infoNote;
+    QVariantList m_infoRows;
+    bool m_infoLoading;
 };
 
 #endif // APPCONTROLLER_H

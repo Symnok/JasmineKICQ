@@ -94,4 +94,19 @@ struct IcqContact
     bool online() const { return status != Icq::StatusOffline; }
 };
 
+/// What the server knows about a user (meta family 0x15, "full user info"); empty strings
+/// and zero numbers mean "not filled in".
+struct IcqUserInfo
+{
+    IcqUserInfo() : age(0), gender(0), birthYear(0), birthMonth(0), birthDay(0), complete(false) {}
+    QString uin;
+    QString nick, firstName, lastName, email, city, state, phone, cell, homepage, about;
+    QString workCompany, workDepartment, workPosition;
+    int age;
+    int gender;         // 1 female, 2 male, 0 unknown
+    int birthYear, birthMonth, birthDay;
+    /// the server sent the final chunk (otherwise the request timed out with what arrived)
+    bool complete;
+};
+
 #endif // ICQTYPES_H

@@ -44,6 +44,12 @@ IcqSession::IcqSession(QObject *parent)
     m_keepAlive = new QTimer(this);
     m_keepAlive->setInterval(KeepAliveMs);
     connect(m_keepAlive, SIGNAL(timeout()), this, SLOT(onKeepAlive()));
+    m_infoTimer = new QTimer(this);
+    m_infoTimer->setSingleShot(true);
+    m_infoTimer->setInterval(8000);
+    connect(m_infoTimer, SIGNAL(timeout()), this, SLOT(onUserInfoTimeout()));
+    m_nextInfoReq = 0x2000;
+    m_pendingGroupRenameId = 0;
     m_connectTimer = new QTimer(this);
     m_connectTimer->setSingleShot(true);
     m_connectTimer->setInterval(ConnectTimeoutMs);
@@ -342,6 +348,7 @@ void IcqSession::handleSnac(const QByteArray &data)
         break;
     case 0x15:
         if (subtype == 0x03 && reqId == 64017) handleOfflineMessage(body);
+        else if (subtype == 0x03 && m_infoRequests.contains(reqId)) handleUserInfo(body, reqId);
         break;
     default:
         break;
@@ -551,6 +558,122 @@ void IcqSession::addGroup(const QString &name)
     send(IcqPackets::ssiEditEnd());
 }
 
+void IcqSession::renameGroup(int groupId, const QString &nameIn)
+{
+    QString name = nameIn.trimmed();
+    if (m_state != Online || name.isEmpty()) return;
+    const IcqGroup g = group(groupId);
+    if (g.id != groupId || g.notInList) return;
+    QList<int> members;
+    for (int i = 0; i < m_order.size(); ++i) {
+        const IcqContact &c = m_contacts[m_order.at(i)];
+        if (c.groupId == groupId && !c.temporary) members.append(c.ssiId);
+    }
+    m_pendingGroupRename = name;
+    m_pendingGroupRenameId = groupId;
+    send(IcqPackets::ssiEditStart());
+    send(IcqPackets::updateGroup(name, groupId, members));
+    send(IcqPackets::ssiEditEnd());
+}
+
+void IcqSession::requestUserInfo(const QString &uinIn)
+{
+    QString uin = uinIn.trimmed();
+    if (m_state != Online || uin.isEmpty()) return;
+    quint32 reqId = m_nextInfoReq++;
+    IcqUserInfo info;
+    info.uin = uin;
+    m_infoRequests.insert(reqId, info);
+    send(IcqPackets::userInfoRequest(m_uin, uin, reqId & 0xFFFF, reqId));
+    m_infoTimer->start();
+}
+
+void IcqSession::onUserInfoTimeout()
+{
+    // whatever arrived is delivered; a server that does not know a chunk never sends it
+    QMap<quint32, IcqUserInfo> pending = m_infoRequests;
+    m_infoRequests.clear();
+    for (QMap<quint32, IcqUserInfo>::const_iterator it = pending.begin(); it != pending.end(); ++it)
+        emit userInfoReceived(it.value());
+}
+
+namespace
+{
+    // meta strings: u16le length including the NUL, CP1251
+    QString metaString(IcqReader &r)
+    {
+        int len = r.u16le();
+        QByteArray raw = r.bytes(len);
+        while (raw.endsWith('\0')) raw.chop(1);
+        return IcqText::decodeGuess(raw).trimmed();
+    }
+}
+
+void IcqSession::handleUserInfo(const QByteArray &data, quint32 reqId)
+{
+    IcqReader r(data);
+    r.skip(14);                       // TLV head, chunk length, our UIN, 0x07DA, sequence
+    int chunk = r.u16le();
+    int result = r.u8();
+    emit log(QString::fromLatin1("user info chunk %1 result %2: ").arg(chunk, 0, 16).arg(result) + QString::fromLatin1(data.toHex()));
+    IcqUserInfo &info = m_infoRequests[reqId];
+    if (result != 0x0A) {
+        // the UIN is unknown to the server (or the request was refused): finish now
+        IcqUserInfo done = info;
+        m_infoRequests.remove(reqId);
+        emit userInfoReceived(done);
+        return;
+    }
+    switch (chunk) {
+    case 0xC8:                        // basic
+        info.nick = metaString(r);
+        info.firstName = metaString(r);
+        info.lastName = metaString(r);
+        info.email = metaString(r);
+        info.city = metaString(r);
+        info.state = metaString(r);
+        info.phone = metaString(r);
+        metaString(r);                // fax
+        metaString(r);                // street
+        info.cell = metaString(r);
+        break;
+    case 0xDC: {                      // more
+        info.age = r.u16le();
+        info.gender = r.u8();
+        info.homepage = metaString(r);
+        info.birthYear = r.u16le();
+        info.birthMonth = r.u8();
+        info.birthDay = r.u8();
+        break;
+    }
+    case 0xD2:                        // work
+        metaString(r);                // city
+        metaString(r);                // state
+        metaString(r);                // phone
+        metaString(r);                // fax
+        metaString(r);                // address
+        metaString(r);                // zip
+        r.u16le();                    // country
+        info.workCompany = metaString(r);
+        info.workDepartment = metaString(r);
+        info.workPosition = metaString(r);
+        break;
+    case 0xE6:                        // about
+        info.about = metaString(r);
+        break;
+    case 0xFA: {                      // affiliations: the last chunk of a full info reply
+        info.complete = true;
+        IcqUserInfo done = info;
+        m_infoRequests.remove(reqId);
+        if (m_infoRequests.isEmpty()) m_infoTimer->stop();
+        emit userInfoReceived(done);
+        break;
+    }
+    default:
+        break;
+    }
+}
+
 void IcqSession::requestAuthorization(const QString &uin, const QString &reason)
 {
     if (m_state != Online) return;
@@ -615,6 +738,17 @@ void IcqSession::handleSsiResult(const QByteArray &data, quint32 reqId)
         }
         m_pendingRename.uin.clear();
         emit ssiFinished(reqId, uin, result == 0, result);
+        break;
+    }
+    case IcqPackets::ReqRenameGroup: {
+        QString name = m_pendingGroupRename;
+        if (result == 0 && !name.isEmpty()) {
+            for (int i = 0; i < m_groups.size(); ++i)
+                if (m_groups.at(i).id == m_pendingGroupRenameId) m_groups[i].name = name;
+            emit groupsChanged();
+        }
+        m_pendingGroupRename.clear();
+        emit ssiFinished(reqId, name, result == 0, result);
         break;
     }
     case IcqPackets::ReqAddGroup: {

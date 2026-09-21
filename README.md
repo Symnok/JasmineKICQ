@@ -4,8 +4,9 @@ An ICQ (OSCAR) client for Symbian Anna/Belle that talks to the kicq.ru server, p
 [Jasmine IM](../JasmineIM) for Android. Qt 4.7.4 / Qt Quick 1.1, the same shell as
 SimpleOKM-Symbian and SimpleVKM-Symbian.
 
-What it does: XOR ("roasted") login, the server-side contact list with groups, add / remove /
-rename contacts, authorization requests both ways, presence with the daisies (green online, yellow
+What it does: XOR ("roasted") login, the server-side contact list with groups (add / remove /
+rename contacts, rename groups), user profiles (the server's "full user info"), authorization
+requests both ways, presence with the daisies (green online, yellow
 away, green with a badge busy, red offline, white unknown) and the contacts' X-status icons, messaging on
 channel 1 and the server-relay channel with delivery marks, typing notifications, offline
 messages, local history, reconnection, and Symbian discreet popups + vibration for messages
@@ -34,7 +35,8 @@ Desktop (Qt 4.7.4 MinGW from the Qt SDK, which ships the Symbian components):
 
 Environment for desktop testing: `KICQ_CREDS_FILE` (a file with `UIN password` per line) and
 `KICQ_ACCOUNT` (line index) sign in automatically; `KICQ_LOG_FILE` writes qDebug and QML
-errors to a file; `KICQ_SHOT_DIR` makes main.qml walk the pages and save screenshots.
+errors to a file; `KICQ_SHOT_DIR` makes main.qml walk the pages and save screenshots
+(the chat and profile steps use `KICQ_TEST_UIN`, default 93444 - not a bot).
 After changing QML in the shadow build delete `release/qrc_qml.cpp` before `mingw32-make`.
 
 Translations: `lupdate -extensions qml,cpp,h -no-obsolete src qml -ts translations/*.ts`

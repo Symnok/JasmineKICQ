@@ -6,6 +6,7 @@
 #include "historystore.h"
 #include "notifier.h"
 #include "icqsession.h"
+#include "icqtypes.h"
 
 #include <QApplication>
 #include <QClipboard>
@@ -57,7 +58,7 @@ AppController::AppController(QObject *parent)
       m_settings(QLatin1String("JasmineKICQ"), QLatin1String("JasmineKICQ")),
       m_history(0), m_netMgr(0), m_netSession(0), m_view(0),
       m_state(QLatin1String("starting")), m_busy(false), m_wantOnline(false), m_everOnline(false),
-      m_reconnectDelay(ReconnectMinMs)
+      m_reconnectDelay(ReconnectMinMs), m_infoLoading(false)
 {
     m_session = new IcqSession(this);
     QStringList v = QString::fromLatin1(KICQ_STR(APP_VERSION)).split(QLatin1Char('.'));
@@ -77,6 +78,7 @@ AppController::AppController(QObject *parent)
     connect(m_session, SIGNAL(authRequested(QString,QString)), this, SLOT(onAuthRequested(QString,QString)));
     connect(m_session, SIGNAL(authReplied(QString,bool)), this, SLOT(onAuthReplied(QString,bool)));
     connect(m_session, SIGNAL(youWereAdded(QString)), this, SLOT(onYouWereAdded(QString)));
+    connect(m_session, SIGNAL(userInfoReceived(IcqUserInfo)), this, SLOT(onUserInfo(IcqUserInfo)));
     connect(m_session, SIGNAL(ssiFinished(int,QString,bool,int)), this, SLOT(onSsiFinished(int,QString,bool,int)));
     connect(m_session, SIGNAL(log(QString)), this, SLOT(onSessionLog(QString)));
     connect(m_chat, SIGNAL(sendFailed(QString)), this, SLOT(onSendFailed(QString)));
@@ -436,6 +438,9 @@ void AppController::onSsiFinished(int request, const QString &name, bool ok, int
         setNotice(ok ? tr("Group \"%1\" created.").arg(name)
                      : (code == -1 ? tr("Group \"%1\" already exists.").arg(name) : tr("Could not create the group (error %1).").arg(code)));
         break;
+    case IcqPackets::ReqRenameGroup:
+        if (!ok) setNotice(tr("Could not rename the group (error %1).").arg(code));
+        break;
     default:
         break;
     }
@@ -501,6 +506,89 @@ void AppController::addGroup(const QString &name)
     m_session->addGroup(name);
 }
 
+void AppController::renameGroup(int groupId, const QString &name)
+{
+    if (name.trimmed().isEmpty()) return;
+    if (!m_session->isOnline()) { setNotice(tr("Not connected.")); return; }
+    const IcqGroup g = m_session->group(groupId);
+    if (g.id != groupId || g.notInList || groupId <= 0) { setNotice(tr("This group cannot be renamed.")); return; }
+    m_session->renameGroup(groupId, name.trimmed());
+}
+
+// -- profile ------------------------------------------------------------------------------------------
+
+bool AppController::showContactInfo(const QString &uin)
+{
+    if (!m_session->isOnline()) { setNotice(tr("Not connected.")); return false; }
+    m_infoUin = uin;
+    m_infoRows.clear();
+    m_infoNote.clear();
+    m_infoLoading = true;
+    emit infoChanged();
+    m_session->requestUserInfo(uin);
+    return true;
+}
+
+QString AppController::infoTitle() const
+{
+    if (m_infoUin.isEmpty()) return QString();
+    if (m_infoUin == m_session->uin()) return tr("My profile");
+    if (m_session->hasContact(m_infoUin)) return m_session->contact(m_infoUin).nick;
+    return m_infoUin;
+}
+
+QString AppController::infoIcon() const
+{
+    if (m_infoUin == m_session->uin()) return myStatusIcon();
+    return m_contacts->contactInfo(m_infoUin).value(QLatin1String("statusIcon")).toString();
+}
+
+namespace
+{
+    void infoRow(QVariantList &rows, const QString &label, const QString &value)
+    {
+        if (value.trimmed().isEmpty()) return;
+        QVariantMap m;
+        m.insert(QLatin1String("label"), label);
+        m.insert(QLatin1String("value"), value.trimmed());
+        rows.append(m);
+    }
+}
+
+void AppController::onUserInfo(const IcqUserInfo &info)
+{
+    if (info.uin != m_infoUin) return;
+    QVariantList rows;
+    infoRow(rows, tr("UIN"), info.uin);
+    infoRow(rows, tr("Nickname"), info.nick);
+    infoRow(rows, tr("First name"), info.firstName);
+    infoRow(rows, tr("Last name"), info.lastName);
+    infoRow(rows, tr("Gender"), info.gender == 1 ? tr("female") : (info.gender == 2 ? tr("male") : QString()));
+    if (info.age > 0) infoRow(rows, tr("Age"), QString::number(info.age));
+    if (info.birthYear > 0 || info.birthMonth > 0) {
+        QDate d(info.birthYear > 0 ? info.birthYear : 2000, info.birthMonth, info.birthDay);
+        QString text = d.isValid() ? (info.birthYear > 0 ? d.toString(QLatin1String("d MMMM yyyy")) : d.toString(QLatin1String("d MMMM")))
+                                   : QString::fromLatin1("%1-%2-%3").arg(info.birthYear).arg(info.birthMonth).arg(info.birthDay);
+        infoRow(rows, tr("Birthday"), text);
+    }
+    infoRow(rows, tr("E-mail"), info.email);
+    infoRow(rows, tr("City"), info.city);
+    infoRow(rows, tr("Region"), info.state);
+    infoRow(rows, tr("Phone"), info.phone);
+    infoRow(rows, tr("Mobile"), info.cell);
+    infoRow(rows, tr("Homepage"), info.homepage);
+    infoRow(rows, tr("Company"), info.workCompany);
+    infoRow(rows, tr("Department"), info.workDepartment);
+    infoRow(rows, tr("Position"), info.workPosition);
+    infoRow(rows, tr("About"), info.about);
+    m_infoRows = rows;
+    m_infoLoading = false;
+    // only the UIN row: the server knows nothing (or no such user)
+    m_infoNote = rows.size() <= 1 ? (info.complete ? tr("The server has no details about this user.") : tr("No reply from the server."))
+                                  : QString();
+    emit infoChanged();
+}
+
 void AppController::requestAuthorization(const QString &uin)
 {
     if (!m_session->isOnline()) { setNotice(tr("Not connected.")); return; }
@@ -535,6 +623,12 @@ QString AppController::logTail() const
 bool AppController::autotest() const
 {
     return !qgetenv("KICQ_SHOT_DIR").isEmpty();
+}
+
+QString AppController::autotestUin() const
+{
+    QByteArray uin = qgetenv("KICQ_TEST_UIN");
+    return uin.isEmpty() ? QLatin1String("93444") : QString::fromLatin1(uin);
 }
 
 void AppController::takeScreenshot(const QString &name)

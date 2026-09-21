@@ -45,6 +45,7 @@ public:
         connect(s, SIGNAL(authReplied(QString,bool)), this, SLOT(onAuthReplied(QString,bool)));
         connect(s, SIGNAL(youWereAdded(QString)), this, SLOT(onYouWereAdded(QString)));
         connect(s, SIGNAL(ssiFinished(int,QString,bool,int)), this, SLOT(onSsi(int,QString,bool,int)));
+        connect(s, SIGNAL(userInfoReceived(IcqUserInfo)), this, SLOT(onUserInfo(IcqUserInfo)));
         QTimer *t = new QTimer(this);
         connect(t, SIGNAL(timeout()), this, SLOT(pollCommands()));
         t->start(500);
@@ -72,6 +73,13 @@ private slots:
     void onAuthRequested(const QString &uin, const QString &reason) { out(QString::fromLatin1("AUTH-REQUEST from %1: %2").arg(uin).arg(reason)); }
     void onAuthReplied(const QString &uin, bool ok) { out(QString::fromLatin1("AUTH-REPLY from %1: %2").arg(uin).arg(ok ? QLatin1String("granted") : QLatin1String("denied"))); }
     void onYouWereAdded(const QString &uin) { out(QLatin1String("YOU-WERE-ADDED by ") + uin); }
+    void onUserInfo(const IcqUserInfo &i)
+    {
+        out(QString::fromLatin1("INFO %1 complete=%2 nick=\"%3\" first=\"%4\" last=\"%5\" email=\"%6\" city=\"%7\" state=\"%8\" phone=\"%9\" cell=\"%10\"")
+            .arg(i.uin).arg(i.complete).arg(i.nick).arg(i.firstName).arg(i.lastName).arg(i.email).arg(i.city).arg(i.state).arg(i.phone).arg(i.cell));
+        out(QString::fromLatin1("INFO age=%1 gender=%2 birth=%3-%4-%5 homepage=\"%6\" work=\"%7/%8/%9\" about=\"%10\"")
+            .arg(i.age).arg(i.gender).arg(i.birthYear).arg(i.birthMonth).arg(i.birthDay).arg(i.homepage).arg(i.workCompany).arg(i.workDepartment).arg(i.workPosition).arg(i.about));
+    }
     void onSsi(int req, const QString &name, bool ok, int code) { out(QString::fromLatin1("SSI req=%1 %2 ok=%3 code=%4").arg(req).arg(name).arg(ok).arg(code)); }
 
     void printRoster()
@@ -145,6 +153,8 @@ private:
         else if (cmd == QLatin1String("del") && a.size() >= 2) m_s->removeContact(a.at(1));
         else if (cmd == QLatin1String("rename") && a.size() >= 3) m_s->renameContact(a.at(1), QStringList(a.mid(2)).join(QLatin1String(" ")));
         else if (cmd == QLatin1String("group") && a.size() >= 2) m_s->addGroup(QStringList(a.mid(1)).join(QLatin1String(" ")));
+        else if (cmd == QLatin1String("rengroup") && a.size() >= 3) m_s->renameGroup(a.at(1).toInt(), QStringList(a.mid(2)).join(QLatin1String(" ")));
+        else if (cmd == QLatin1String("info") && a.size() >= 2) m_s->requestUserInfo(a.at(1));
         else if (cmd == QLatin1String("auth") && a.size() >= 2) m_s->requestAuthorization(a.at(1), QLatin1String("Please authorize me"));
         else if (cmd == QLatin1String("grant") && a.size() >= 2) m_s->replyAuthorization(a.at(1), true);
         else if (cmd == QLatin1String("deny") && a.size() >= 2) m_s->replyAuthorization(a.at(1), false);

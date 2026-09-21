@@ -207,6 +207,15 @@ IcqSnac deleteOfflineMsgs(const QString &uin, int seq)
 
 IcqSnac anotherOfflineMsgsRequest() { return IcqSnac(4, 0x10, 262431, QByteArray()); }
 
+IcqSnac userInfoRequest(const QString &myUin, const QString &uin, int metaSeq, quint32 reqId)
+{
+    IcqWriter inner;
+    inner.u16le(14).u32le(myUin.toUInt()).u16le(0x07D0).u16le(metaSeq).u16le(0x04B2).u32le(uin.toUInt());
+    IcqWriter w;
+    w.tlv(1, inner);
+    return IcqSnac(0x15, 2, reqId, w.data());
+}
+
 // -- messaging -------------------------------------------------------------------------------
 
 IcqSnac messageChannel1(const QString &receiver, const QByteArray &text, int charset, const QByteArray &cookie, bool requestAck, quint32 reqId)

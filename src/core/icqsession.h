@@ -71,7 +71,11 @@ public:
     void removeContact(const QString &uin);
     void renameContact(const QString &uin, const QString &nick);
     void addGroup(const QString &name);
+    void renameGroup(int groupId, const QString &name);
     void requestAuthorization(const QString &uin, const QString &reason);
+    /// Asks the server for the user's details; answered by userInfoReceived (also for
+    /// strangers and for our own UIN).
+    void requestUserInfo(const QString &uin);
     void replyAuthorization(const QString &uin, bool granted);
 
     // -- presence -------------------------------------------------------------------------------
@@ -110,6 +114,7 @@ signals:
     void authReplied(const QString &uin, bool granted);
     void youWereAdded(const QString &uin);
     void ssiFinished(int request, const QString &name, bool ok, int code);
+    void userInfoReceived(const IcqUserInfo &info);
     /// Debug/diagnostic line (the harness prints these; the app ignores them).
     void log(const QString &line);
 
@@ -120,6 +125,7 @@ private slots:
     void onSocketError();
     void onKeepAlive();
     void onConnectTimeout();
+    void onUserInfoTimeout();
 
 private:
     void setState(State s);
@@ -140,6 +146,7 @@ private:
     void handleUserOffline(const QByteArray &data);
     void handleIncomingMessage(const QByteArray &data);
     void handleOfflineMessage(const QByteArray &data);
+    void handleUserInfo(const QByteArray &data, quint32 reqId);
     void handleMessageAck(const QByteArray &data);
     void handleMessageError(const QByteArray &data, quint32 reqId);
     void handleTyping(const QByteArray &data);
@@ -184,6 +191,11 @@ private:
     Pending m_pendingRename;
     QString m_pendingGroup;
     int m_pendingGroupId;
+    QString m_pendingGroupRename;
+    int m_pendingGroupRenameId;
+    QMap<quint32, IcqUserInfo> m_infoRequests;   // request id -> details collected so far
+    quint32 m_nextInfoReq;
+    QTimer *m_infoTimer;
     struct PendingMsg { QString uin; QByteArray cookie; };
     QMap<quint32, PendingMsg> m_pendingMsgs;   // request id -> message awaiting ack/error
     quint32 m_nextMsgReq;

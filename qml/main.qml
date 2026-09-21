@@ -35,6 +35,7 @@ PageStackWindow {
     Component { id: loginPage; LoginPage {} }
     Component { id: contactsPage; ContactsPage {} }
     Component { id: chatPage; ChatPage {} }
+    Component { id: infoPage; ContactInfoPage {} }
 
     function route() {
         if (app.state == "login") {
@@ -81,13 +82,15 @@ PageStackWindow {
             if (app.connection != "online") return
             step++
             if (step == 1) app.takeScreenshot("contacts")
-            else if (step == 2) { if (app.contacts.count > 0) window.openChat(app.contacts.get(0).uin) }
+            else if (step == 2) window.openChat(app.autotestUin)
             else if (step == 3) app.takeScreenshot("chat")
             else if (step == 4) { app.chat.send("Autotest: привет от JasmineKICQ") }
             else if (step == 5) app.takeScreenshot("chat-sent")
             else if (step == 6) { app.chat.close(); pageStack.pop(); statusDialogProbe() }
             else if (step == 7) app.takeScreenshot("contacts-again")
-            else if (step == 8) Qt.quit()
+            else if (step == 8) { if (app.showContactInfo(app.autotestUin)) pageStack.push(infoPage) }
+            else if (step == 10) app.takeScreenshot("info")
+            else if (step == 11) Qt.quit()
         }
         function statusDialogProbe() { }
     }

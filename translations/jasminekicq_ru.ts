@@ -31,116 +31,238 @@
 <context>
     <name>AppController</name>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="260" />
+        <location filename="../src/app/appcontroller.cpp" line="262" />
         <source>Enter your UIN and password.</source>
         <translation>Введите UIN и пароль.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="351" />
+        <location filename="../src/app/appcontroller.cpp" line="353" />
         <source>Connection lost: %1. Reconnecting...</source>
         <translation>Соединение потеряно: %1. Переподключение...</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="396" />
+        <location filename="../src/app/appcontroller.cpp" line="398" />
         <source>%1 (%2) asks for your authorization.</source>
         <translation>%1 (%2) запрашивает авторизацию.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="397" />
+        <location filename="../src/app/appcontroller.cpp" line="399" />
         <source>%1 (%2) asks for your authorization: %3</source>
         <translation>%1 (%2) запрашивает авторизацию: %3</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="399" />
+        <location filename="../src/app/appcontroller.cpp" line="401" />
         <source>asks for your authorization</source>
         <translation>запрашивает авторизацию</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="414" />
+        <location filename="../src/app/appcontroller.cpp" line="416" />
         <source>%1 authorized you.</source>
         <translation>%1 авторизовал(а) вас.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="414" />
+        <location filename="../src/app/appcontroller.cpp" line="416" />
         <source>%1 declined your authorization request.</source>
         <translation>%1 отклонил(а) запрос авторизации.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="419" />
+        <location filename="../src/app/appcontroller.cpp" line="421" />
         <source>%1 added you to their contact list.</source>
         <translation>%1 добавил(а) вас в свой список контактов.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="426" />
+        <location filename="../src/app/appcontroller.cpp" line="428" />
         <source>Contact %1 added.</source>
         <translation>Контакт %1 добавлен.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="427" />
+        <location filename="../src/app/appcontroller.cpp" line="429" />
         <source>%1 is already in the list.</source>
         <translation>%1 уже есть в списке.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="427" />
+        <location filename="../src/app/appcontroller.cpp" line="429" />
         <source>Could not add %1 (error %2).</source>
         <translation>Не удалось добавить %1 (ошибка %2).</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="430" />
+        <location filename="../src/app/appcontroller.cpp" line="432" />
         <source>Contact removed.</source>
         <translation>Контакт удалён.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="430" />
+        <location filename="../src/app/appcontroller.cpp" line="432" />
         <source>Could not remove the contact (error %1).</source>
         <translation>Не удалось удалить контакт (ошибка %1).</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="433" />
+        <location filename="../src/app/appcontroller.cpp" line="435" />
         <source>Could not rename the contact (error %1).</source>
         <translation>Не удалось переименовать контакт (ошибка %1).</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="436" />
+        <location filename="../src/app/appcontroller.cpp" line="438" />
         <source>Group "%1" created.</source>
         <translation>Группа «%1» создана.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="437" />
+        <location filename="../src/app/appcontroller.cpp" line="439" />
         <source>Group "%1" already exists.</source>
         <translation>Группа «%1» уже существует.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="437" />
+        <location filename="../src/app/appcontroller.cpp" line="439" />
         <source>Could not create the group (error %1).</source>
         <translation>Не удалось создать группу (ошибка %1).</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="477" />
+        <location filename="../src/app/appcontroller.cpp" line="442" />
+        <source>Could not rename the group (error %1).</source>
+        <translation>Не удалось переименовать группу (ошибка %1).</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="482" />
         <source>A UIN is a number.</source>
         <translation>UIN — это число.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="480" />
-        <location filename="../src/app/appcontroller.cpp" line="486" />
-        <location filename="../src/app/appcontroller.cpp" line="494" />
-        <location filename="../src/app/appcontroller.cpp" line="500" />
-        <location filename="../src/app/appcontroller.cpp" line="506" />
+        <location filename="../src/app/appcontroller.cpp" line="485" />
+        <location filename="../src/app/appcontroller.cpp" line="491" />
+        <location filename="../src/app/appcontroller.cpp" line="499" />
+        <location filename="../src/app/appcontroller.cpp" line="505" />
+        <location filename="../src/app/appcontroller.cpp" line="512" />
+        <location filename="../src/app/appcontroller.cpp" line="522" />
+        <location filename="../src/app/appcontroller.cpp" line="594" />
         <source>Not connected.</source>
         <translation>Нет соединения.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="507" />
+        <location filename="../src/app/appcontroller.cpp" line="514" />
+        <source>This group cannot be renamed.</source>
+        <translation>Эту группу нельзя переименовать.</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="535" />
+        <source>My profile</source>
+        <translation>Мой профиль</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="562" />
+        <source>UIN</source>
+        <translation>UIN</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="563" />
+        <source>Nickname</source>
+        <translation>Ник</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="564" />
+        <source>First name</source>
+        <translation>Имя</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="565" />
+        <source>Last name</source>
+        <translation>Фамилия</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="566" />
+        <source>Gender</source>
+        <translation>Пол</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="566" />
+        <source>female</source>
+        <translation>женский</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="566" />
+        <source>male</source>
+        <translation>мужской</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="567" />
+        <source>Age</source>
+        <translation>Возраст</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="572" />
+        <source>Birthday</source>
+        <translation>День рождения</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="574" />
+        <source>E-mail</source>
+        <translation>E-mail</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="575" />
+        <source>City</source>
+        <translation>Город</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="576" />
+        <source>Region</source>
+        <translation>Регион</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="577" />
+        <source>Phone</source>
+        <translation>Телефон</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="578" />
+        <source>Mobile</source>
+        <translation>Мобильный</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="579" />
+        <source>Homepage</source>
+        <translation>Сайт</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="580" />
+        <source>Company</source>
+        <translation>Компания</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="581" />
+        <source>Department</source>
+        <translation>Отдел</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="582" />
+        <source>Position</source>
+        <translation>Должность</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="583" />
+        <source>About</source>
+        <translation>О программе</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="587" />
+        <source>The server has no details about this user.</source>
+        <translation>Сервер ничего не знает об этом пользователе.</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="587" />
+        <source>No reply from the server.</source>
+        <translation>Сервер не ответил.</translation>
+    </message>
+    <message>
+        <location filename="../src/app/appcontroller.cpp" line="595" />
         <source>Please authorize me</source>
         <translation>Пожалуйста, авторизуйте меня</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="508" />
+        <location filename="../src/app/appcontroller.cpp" line="596" />
         <source>Authorization request sent.</source>
         <translation>Запрос авторизации отправлен.</translation>
     </message>
     <message>
-        <location filename="../src/app/appcontroller.cpp" line="519" />
+        <location filename="../src/app/appcontroller.cpp" line="607" />
         <source>Copied.</source>
         <translation>Скопировано.</translation>
     </message>
@@ -148,60 +270,73 @@
 <context>
     <name>ChatPage</name>
     <message>
-        <location filename="../qml/ChatPage.qml" line="22" />
+        <location filename="../qml/ChatPage.qml" line="24" />
         <source>Add to contact list</source>
         <translation>Добавить в список контактов</translation>
     </message>
     <message>
-        <location filename="../qml/ChatPage.qml" line="26" />
+        <location filename="../qml/ChatPage.qml" line="28" />
+        <source>Contact info</source>
+        <translation>О контакте</translation>
+    </message>
+    <message>
+        <location filename="../qml/ChatPage.qml" line="29" />
         <source>Copy UIN</source>
         <translation>Скопировать UIN</translation>
     </message>
     <message>
-        <location filename="../qml/ChatPage.qml" line="27" />
-        <location filename="../qml/ChatPage.qml" line="33" />
+        <location filename="../qml/ChatPage.qml" line="30" />
+        <location filename="../qml/ChatPage.qml" line="36" />
         <source>Clear history</source>
         <translation>Очистить историю</translation>
     </message>
     <message>
-        <location filename="../qml/ChatPage.qml" line="34" />
+        <location filename="../qml/ChatPage.qml" line="37" />
         <source>Delete all messages of this chat from the phone?</source>
         <translation>Удалить все сообщения этого чата с телефона?</translation>
     </message>
     <message>
-        <location filename="../qml/ChatPage.qml" line="35" />
+        <location filename="../qml/ChatPage.qml" line="38" />
         <source>Delete</source>
         <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../qml/ChatPage.qml" line="36" />
+        <location filename="../qml/ChatPage.qml" line="39" />
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../qml/ChatPage.qml" line="46" />
+        <location filename="../qml/ChatPage.qml" line="49" />
         <source>Copy text</source>
         <translation>Скопировать текст</translation>
     </message>
     <message>
-        <location filename="../qml/ChatPage.qml" line="50" />
+        <location filename="../qml/ChatPage.qml" line="53" />
         <source>Retry</source>
         <translation>Повторить</translation>
     </message>
     <message>
-        <location filename="../qml/ChatPage.qml" line="122" />
+        <location filename="../qml/ChatPage.qml" line="125" />
         <source>No messages yet.</source>
         <translation>Сообщений пока нет.</translation>
     </message>
     <message>
-        <location filename="../qml/ChatPage.qml" line="138" />
+        <location filename="../qml/ChatPage.qml" line="141" />
         <source>message</source>
         <translation>сообщение</translation>
     </message>
     <message>
-        <location filename="../qml/ChatPage.qml" line="147" />
+        <location filename="../qml/ChatPage.qml" line="150" />
         <source>Send</source>
         <translation>Отправить</translation>
+    </message>
+</context>
+<context>
+    <name>ContactInfoPage</name>
+    <message>
+        <location filename="../qml/ContactInfoPage.qml" line="35" />
+        <source>profile</source>
+        <translation>профиль</translation>
     </message>
 </context>
 <context>
@@ -225,181 +360,199 @@
 <context>
     <name>ContactsPage</name>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="30" />
+        <location filename="../qml/ContactsPage.qml" line="32" />
         <source>Hide offline contacts</source>
         <translation>Скрыть контакты не в сети</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="30" />
+        <location filename="../qml/ContactsPage.qml" line="32" />
         <source>Show offline contacts</source>
         <translation>Показать контакты не в сети</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="33" />
-        <location filename="../qml/ContactsPage.qml" line="160" />
+        <location filename="../qml/ContactsPage.qml" line="35" />
+        <location filename="../qml/ContactsPage.qml" line="163" />
         <source>New group</source>
         <translation>Новая группа</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="35" />
+        <location filename="../qml/ContactsPage.qml" line="36" />
+        <source>My profile</source>
+        <translation>Мой профиль</translation>
+    </message>
+    <message>
+        <location filename="../qml/ContactsPage.qml" line="38" />
         <source>Connect</source>
         <translation>Подключиться</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="35" />
+        <location filename="../qml/ContactsPage.qml" line="38" />
         <source>Disconnect</source>
         <translation>Отключиться</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="38" />
+        <location filename="../qml/ContactsPage.qml" line="41" />
         <source>Settings</source>
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="39" />
+        <location filename="../qml/ContactsPage.qml" line="42" />
         <source>About</source>
         <translation>О программе</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="40" />
-        <location filename="../qml/ContactsPage.qml" line="47" />
-        <location filename="../qml/ContactsPage.qml" line="49" />
+        <location filename="../qml/ContactsPage.qml" line="43" />
+        <location filename="../qml/ContactsPage.qml" line="50" />
+        <location filename="../qml/ContactsPage.qml" line="52" />
         <source>Sign out</source>
         <translation>Выйти</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="48" />
+        <location filename="../qml/ContactsPage.qml" line="51" />
         <source>Sign out? The saved password will be removed from this phone.</source>
         <translation>Выйти? Сохранённый пароль будет удалён с этого телефона.</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="50" />
-        <location filename="../qml/ContactsPage.qml" line="89" />
-        <location filename="../qml/ContactsPage.qml" line="161" />
-        <location filename="../qml/ContactsPage.qml" line="174" />
-        <location filename="../qml/ContactsPage.qml" line="190" />
+        <location filename="../qml/ContactsPage.qml" line="53" />
+        <location filename="../qml/ContactsPage.qml" line="92" />
+        <location filename="../qml/ContactsPage.qml" line="164" />
+        <location filename="../qml/ContactsPage.qml" line="177" />
+        <location filename="../qml/ContactsPage.qml" line="209" />
+        <location filename="../qml/ContactsPage.qml" line="225" />
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="56" />
+        <location filename="../qml/ContactsPage.qml" line="59" />
         <source>My status</source>
         <translation>Мой статус</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="88" />
+        <location filename="../qml/ContactsPage.qml" line="91" />
         <source>Add contact</source>
         <translation>Добавить контакт</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="89" />
+        <location filename="../qml/ContactsPage.qml" line="92" />
         <source>Add</source>
         <translation>Добавить</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="95" />
+        <location filename="../qml/ContactsPage.qml" line="98" />
         <source>UIN</source>
         <translation>UIN</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="97" />
+        <location filename="../qml/ContactsPage.qml" line="100" />
         <source>nickname (optional)</source>
         <translation>ник (необязательно)</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="99" />
+        <location filename="../qml/ContactsPage.qml" line="102" />
         <source>group</source>
         <translation>группа</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="103" />
+        <location filename="../qml/ContactsPage.qml" line="106" />
         <source>choose...</source>
         <translation>выбрать...</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="125" />
+        <location filename="../qml/ContactsPage.qml" line="128" />
         <source>Group</source>
         <translation>Группа</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="161" />
+        <location filename="../qml/ContactsPage.qml" line="164" />
         <source>Create</source>
         <translation>Создать</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="165" />
+        <location filename="../qml/ContactsPage.qml" line="168" />
         <source>group name</source>
         <translation>название группы</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="173" />
+        <location filename="../qml/ContactsPage.qml" line="176" />
+        <location filename="../qml/ContactsPage.qml" line="193" />
+        <source>Rename group</source>
+        <translation>Переименовать группу</translation>
+    </message>
+    <message>
+        <location filename="../qml/ContactsPage.qml" line="208" />
         <source>Rename contact</source>
         <translation>Переименовать контакт</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="174" />
-        <location filename="../qml/ContactsPage.qml" line="199" />
+        <location filename="../qml/ContactsPage.qml" line="177" />
+        <location filename="../qml/ContactsPage.qml" line="209" />
+        <location filename="../qml/ContactsPage.qml" line="238" />
         <source>Rename</source>
         <translation>Переименовать</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="187" />
+        <location filename="../qml/ContactsPage.qml" line="222" />
         <source>Remove contact</source>
         <translation>Удалить контакт</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="188" />
+        <location filename="../qml/ContactsPage.qml" line="223" />
         <source>Remove "%1" from the contact list on the server?</source>
         <translation>Удалить «%1» из списка контактов на сервере?</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="189" />
-        <location filename="../qml/ContactsPage.qml" line="217" />
+        <location filename="../qml/ContactsPage.qml" line="224" />
+        <location filename="../qml/ContactsPage.qml" line="256" />
         <source>Remove</source>
         <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="203" />
+        <location filename="../qml/ContactsPage.qml" line="234" />
+        <source>Contact info</source>
+        <translation>О контакте</translation>
+    </message>
+    <message>
+        <location filename="../qml/ContactsPage.qml" line="242" />
         <source>Request authorization</source>
         <translation>Запросить авторизацию</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="208" />
+        <location filename="../qml/ContactsPage.qml" line="247" />
         <source>Add to contact list</source>
         <translation>Добавить в список контактов</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="213" />
+        <location filename="../qml/ContactsPage.qml" line="252" />
         <source>Copy UIN</source>
         <translation>Скопировать UIN</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="243" />
+        <location filename="../qml/ContactsPage.qml" line="282" />
         <source>connecting...</source>
         <translation>подключение...</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="243" />
+        <location filename="../qml/ContactsPage.qml" line="282" />
         <source>offline</source>
         <translation>не в сети</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="347" />
+        <location filename="../qml/ContactsPage.qml" line="387" />
         <source>The contact list is empty. Tap + to add someone.</source>
         <translation>Список контактов пуст. Нажмите +, чтобы добавить кого-нибудь.</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="347" />
+        <location filename="../qml/ContactsPage.qml" line="387" />
         <source>Nobody is online.</source>
         <translation>Никого нет в сети.</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="348" />
+        <location filename="../qml/ContactsPage.qml" line="388" />
         <source>Connecting...</source>
         <translation>Подключение...</translation>
     </message>
     <message>
-        <location filename="../qml/ContactsPage.qml" line="348" />
+        <location filename="../qml/ContactsPage.qml" line="388" />
         <source>Offline. Use the menu to connect.</source>
         <translation>Не в сети. Подключитесь через меню.</translation>
     </message>
@@ -651,17 +804,17 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../qml/main.qml" line="103" />
+        <location filename="../qml/main.qml" line="106" />
         <source>Authorization request</source>
         <translation>Запрос авторизации</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="105" />
+        <location filename="../qml/main.qml" line="108" />
         <source>Authorize</source>
         <translation>Авторизовать</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="106" />
+        <location filename="../qml/main.qml" line="109" />
         <source>Decline</source>
         <translation>Отклонить</translation>
     </message>

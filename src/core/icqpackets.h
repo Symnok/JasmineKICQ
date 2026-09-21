@@ -58,6 +58,8 @@ namespace IcqPackets
     IcqSnac offlineMsgsRequest(const QString &uin, int seq);
     IcqSnac deleteOfflineMsgs(const QString &uin, int seq);
     IcqSnac anotherOfflineMsgsRequest();
+    /// Meta "full user info" request (0x04B2); the reply chunks carry reqId back.
+    IcqSnac userInfoRequest(const QString &myUin, const QString &uin, int metaSeq, quint32 reqId);
 
     // -- messaging ----------------------------------------------------------------------------
     /// Channel 1 text with an offline-store TLV and optionally an ack request.

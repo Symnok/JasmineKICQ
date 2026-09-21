@@ -10,6 +10,8 @@ Page {
     id: page
     property variant chat: app.chat
 
+    Component { id: infoPage; ContactInfoPage {} }
+
     tools: ToolBarLayout {
         ToolButton { iconSource: "toolbar-back"; onClicked: { chat.close(); pageStack.pop() } }
         ToolButton { iconSource: "toolbar-menu"; onClicked: menu.open() }
@@ -23,6 +25,7 @@ Page {
                 visible: chat.peerTemporary
                 onClicked: app.addContact(chat.uin, chat.title, 0)
             }
+            MenuItem { text: qsTr("Contact info"); onClicked: if (app.showContactInfo(chat.uin)) pageStack.push(infoPage) }
             MenuItem { text: qsTr("Copy UIN"); onClicked: app.copyText(chat.uin) }
             MenuItem { text: qsTr("Clear history"); onClicked: clearDialog.open() }
         }

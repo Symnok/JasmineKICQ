@@ -3,7 +3,8 @@
 //
 // The contact list: my status in the header, the roster grouped as on the server, a
 // daisy per contact (green online, yellow away, red busy, white offline), unread badges.
-// Tap opens the chat; long-press for rename / delete / authorization.
+// Tap opens the chat; long-press for profile / rename / delete / authorization. Tap a group
+// heading to rename the group.
 import QtQuick 1.1
 import com.nokia.symbian 1.1
 
@@ -12,6 +13,7 @@ Page {
 
     Component { id: settingsPage; SettingsPage {} }
     Component { id: aboutPage; AboutPage {} }
+    Component { id: infoPage; ContactInfoPage {} }
 
     tools: ToolBarLayout {
         ToolButton { iconSource: "toolbar-back"; onClicked: Qt.quit() }
@@ -31,6 +33,7 @@ Page {
                 onClicked: app.contacts.showOffline = !app.contacts.showOffline
             }
             MenuItem { text: qsTr("New group"); onClicked: groupDialog.open() }
+            MenuItem { text: qsTr("My profile"); onClicked: if (app.showContactInfo(app.myUin)) pageStack.push(infoPage) }
             MenuItem {
                 text: app.connection == "offline" ? qsTr("Connect") : qsTr("Disconnect")
                 onClicked: app.connection == "offline" ? app.reconnect() : app.goOffline()
@@ -168,6 +171,38 @@ Page {
     }
 
     CommonDialog {
+        id: renameGroupDialog
+        property int groupId
+        titleText: qsTr("Rename group")
+        buttonTexts: [qsTr("Rename"), qsTr("Cancel")]
+        content: Column {
+            width: parent.width
+            anchors { left: parent.left; right: parent.right; margins: platformStyle.paddingLarge }
+            TextField { id: renameGroupField; width: parent.width }
+        }
+        onButtonClicked: if (index == 0) app.renameGroup(renameGroupDialog.groupId, renameGroupField.text)
+    }
+
+    // tap on a group heading
+    ContextMenu {
+        id: groupMenu
+        property int groupId
+        property string name
+        MenuLayout {
+            MenuItem {
+                text: qsTr("Rename group")
+                onClicked: { renameGroupDialog.groupId = groupMenu.groupId; renameGroupField.text = groupMenu.name; renameGroupDialog.open() }
+            }
+        }
+    }
+
+    function openGroupMenu(name) {
+        var g = app.contacts.groups()
+        for (var i = 0; i < g.length; ++i)
+            if (g[i].name == name) { groupMenu.groupId = g[i].id; groupMenu.name = name; groupMenu.open(); return }
+    }
+
+    CommonDialog {
         id: renameDialog
         property string uin
         titleText: qsTr("Rename contact")
@@ -195,6 +230,10 @@ Page {
         id: contextMenu
         property variant item
         MenuLayout {
+            MenuItem {
+                text: qsTr("Contact info")
+                onClicked: if (app.showContactInfo(contextMenu.item.uin)) pageStack.push(infoPage)
+            }
             MenuItem {
                 text: qsTr("Rename")
                 onClicked: { renameDialog.uin = contextMenu.item.uin; renameField.text = contextMenu.item.nick; renameDialog.open() }
@@ -266,6 +305,7 @@ Page {
         section.delegate: ListHeading {
             width: list.width
             ListItemText { anchors.fill: parent.paddingItem; role: "Heading"; text: section; horizontalAlignment: Text.AlignLeft }
+            MouseArea { anchors.fill: parent; onClicked: page.openGroupMenu(section) }
         }
 
         delegate: ListItem {

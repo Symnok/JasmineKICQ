@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>qml/AboutPage.qml</file>
+        <file>qml/ContactInfoPage.qml</file>
         <file>qml/ChatPage.qml</file>
         <file>qml/ContactsPage.qml</file>
         <file>qml/LoginPage.qml</file>
