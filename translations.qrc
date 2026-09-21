@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>translations/jasminekicq_ru.qm</file>
+        <file>translations/jasminekicq_uk.qm</file>
+    </qresource>
+</RCC>

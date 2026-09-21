@@ -1,0 +1,716 @@
+Setting up environment for Qt Symbian 3 usage...
+version 0.1.14 -> 0.1.15
+=== building JasmineKICQ 0.1.15
+Qt: Untested Windows version 6.2 detected!
+Qt: Untested Windows version 6.2 detected!
+Qt: Untested Windows version 6.2 detected!
+WARNING: d:\GitHub\SymnokRepos\JasmineKICQ\JasmineKICQ.pro:59: Unescaped backslashes are deprecated.
+ qt-tools   : D:\GitHub\SymnokRepos\JasmineKICQ\qrc_qml.cpp  	[arm.v5.urel.gcce4_4_1]
+ mifconv    : BITMAP  	[arm.v5.urel.gcce4_4_1]
+ resource   : epoc32\build\jasminekicq\c_dbb3b7751ca43c26\JasmineKICQ_exe\JasmineKICQ_JasmineKICQ.rsc  	[arm.v5.urel.gcce4_4_1]
+ resource   : epoc32\build\jasminekicq\c_dbb3b7751ca43c26\JasmineKICQ_reg_exe\JasmineKICQ_reg_JasmineKICQ_reg.rsc  	[arm.v5.urel.gcce4_4_1]
+ compile    : moc_icqsession.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbytearray.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QByteArray:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtypes.h:8,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqsession.h:19,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_icqsession.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qdatetime.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QDateTime:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtypes.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqsession.h:19,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_icqsession.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qdatetime.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QDateTime:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtypes.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqsession.h:19,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_icqsession.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   
+ compile    : moc_appcontroller.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbytearray.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/appcontroller.h:10,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_appcontroller.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/appcontroller.h:10,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_appcontroller.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/appcontroller.h:10,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_appcontroller.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   
+ compile    : moc_messagesmodel.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbytearray.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QByteArray:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/historystore.h:10,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/messagesmodel.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_messagesmodel.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qdatetime.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QDateTime:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/historystore.h:11,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/messagesmodel.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_messagesmodel.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qdatetime.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QDateTime:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/historystore.h:11,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/messagesmodel.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_messagesmodel.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   
+ compile    : moc_contactsmodel.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qvariant.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qabstractitemmodel.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QAbstractListModel:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/contactsmodel.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_contactsmodel.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_stream_iterator.h:55,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/iterator:47,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qlist.h:50,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qvariant.h:47,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qabstractitemmodel.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QAbstractListModel:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/contactsmodel.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_contactsmodel.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_stream_iterator.h:55,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/iterator:47,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qlist.h:50,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qvariant.h:47,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qabstractitemmodel.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QAbstractListModel:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/contactsmodel.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_contactsmodel.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   
+ compile    : qrc_translations.cpp  	[arm.v5.urel.gcce4_4_1]
+ compile    : qrc_qml.cpp  	[arm.v5.urel.gcce4_4_1]
+ compile    : moc_notifier.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbytearray.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.h:12,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_notifier.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.h:12,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_notifier.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.h:12,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/moc_notifier.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   
+ compile    : src\app\messagesmodel.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbytearray.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QByteArray:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/historystore.h:10,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/messagesmodel.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/messagesmodel.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qdatetime.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QDateTime:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/historystore.h:11,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/messagesmodel.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/messagesmodel.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qdatetime.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QDateTime:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/historystore.h:11,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/messagesmodel.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/messagesmodel.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   
+ compile    : src\main.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbytearray.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/appcontroller.h:10,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/main.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/appcontroller.h:10,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/main.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/appcontroller.h:10,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/main.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/e32svr.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/f32file.h:39,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/apparc.h:24,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/eikapp.h:22,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/aknapp.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtGui/qs60mainapplication.h:50,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtGui/QtGui:133,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtDeclarative/QtDeclarative:4,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/main.cpp:14:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/d32locd.h: At global scope:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/d32locd.h:219: warning: invalid access to non-static data member 'TLocalDriveCaps::iSize'  of NULL object
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/d32locd.h:219: warning: (perhaps the 'offsetof' macro was used incorrectly)
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/d32locd.h:220: warning: invalid access to non-static data member 'TLocalDriveCapsV3::iFormatInfo'  of NULL object
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/d32locd.h:220: warning: (perhaps the 'offsetof' macro was used incorrectly)
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/e32svr.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/f32file.h:39,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/apparc.h:24,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/eikapp.h:22,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/aknapp.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtGui/qs60mainapplication.h:50,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtGui/QtGui:133,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtDeclarative/QtDeclarative:4,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/main.cpp:14:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32event.h: In constructor 'TRawEvent::TRawEvent()':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32event.h:271: warning: dereferencing type-punned pointer will break strict-aliasing rules
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/e32svr.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/f32file.h:39,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/apparc.h:24,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/eikapp.h:22,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/aknapp.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtGui/qs60mainapplication.h:50,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtGui/QtGui:133,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtDeclarative/QtDeclarative:4,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/main.cpp:14:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32event.h: In member function 'TRawEvent& TRawEventBuf::Event() const':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32event.h:437: warning: dereferencing type-punned pointer will break strict-aliasing rules
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/apparc.h:24,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/eikapp.h:22,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/aknapp.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtGui/qs60mainapplication.h:50,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtGui/QtGui:133,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtDeclarative/QtDeclarative:4,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/main.cpp:14:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/f32file.h: At global scope:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/f32file.h:2284: warning: invalid access to non-static data member 'TVolFormatParam::iUId'  of NULL object
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/f32file.h:2284: warning: (perhaps the 'offsetof' macro was used incorrectly)
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/fntstore.h:28,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/w32std.h:25,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/coeaui.h:24,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/eikappui.h:22,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/aknappui.h:25,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtGui/qs60mainappui.h:50,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtGui/QtGui:134,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtDeclarative/QtDeclarative:4,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/main.cpp:14:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/openfont.h: In static member function 'static CShaperFactory* CShaperFactory::NewL(TUid)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/openfont.h:2464: warning: invalid access to non-static data member 'CShaperFactory::iDtor_ID_Key'  of NULL object
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/openfont.h:2464: warning: (perhaps the 'offsetof' macro was used incorrectly)
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/gulalign.h:25,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/coetextdrawer.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/coemain.h:28,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/coeview.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/coeaui.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/eikappui.h:22,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/aknappui.h:25,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtGui/qs60mainappui.h:50,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtGui/QtGui:134,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtDeclarative/QtDeclarative:4,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/main.cpp:14:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/biditext.h: At global scope:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/biditext.h:25: warning: declaration 'enum CGraphicsContext::TTextAlign' does not declare anything
+   
+ compile    : src\app\contactsmodel.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qvariant.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qabstractitemmodel.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QAbstractListModel:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/contactsmodel.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/contactsmodel.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_stream_iterator.h:55,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/iterator:47,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qlist.h:50,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qvariant.h:47,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qabstractitemmodel.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QAbstractListModel:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/contactsmodel.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/contactsmodel.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_stream_iterator.h:55,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/iterator:47,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qlist.h:50,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qvariant.h:47,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qabstractitemmodel.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QAbstractListModel:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/contactsmodel.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/contactsmodel.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   
+ compile    : src\app\appcontroller.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbytearray.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/appcontroller.h:10,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/appcontroller.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/appcontroller.h:10,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/appcontroller.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/appcontroller.h:10,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/appcontroller.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   
+ compile    : src\core\icqtext.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbytearray.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QByteArray:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtext.h:10,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtext.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QString:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtext.h:11,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtext.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QString:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtext.h:11,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtext.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   
+ compile    : src\app\historystore.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbytearray.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QByteArray:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/historystore.h:10,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/historystore.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qdatetime.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QDateTime:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/historystore.h:11,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/historystore.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qdatetime.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QDateTime:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/historystore.h:11,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/historystore.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   
+ compile    : src\core\icqtypes.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbytearray.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QByteArray:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtypes.h:8,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtypes.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qdatetime.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QDateTime:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtypes.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtypes.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qdatetime.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QDateTime:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtypes.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtypes.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   
+ compile    : src\app\notifier.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbytearray.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.h:12,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.h:12,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qobject.h:48,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QObject:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.h:12,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/e32svr.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/f32file.h:39,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/fntstore.h:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/w32std.h:25,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/coemain.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/mw/akndiscreetpopup.h:25,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/d32locd.h: At global scope:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/d32locd.h:219: warning: invalid access to non-static data member 'TLocalDriveCaps::iSize'  of NULL object
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/d32locd.h:219: warning: (perhaps the 'offsetof' macro was used incorrectly)
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/d32locd.h:220: warning: invalid access to non-static data member 'TLocalDriveCapsV3::iFormatInfo'  of NULL object
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/d32locd.h:220: warning: (perhaps the 'offsetof' macro was used incorrectly)
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/e32svr.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/f32file.h:39,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/fntstore.h:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/w32std.h:25,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/coemain.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/mw/akndiscreetpopup.h:25,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32event.h: In constructor 'TRawEvent::TRawEvent()':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32event.h:271: warning: dereferencing type-punned pointer will break strict-aliasing rules
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/e32svr.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/f32file.h:39,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/fntstore.h:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/w32std.h:25,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/coemain.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/mw/akndiscreetpopup.h:25,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32event.h: In member function 'TRawEvent& TRawEventBuf::Event() const':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32event.h:437: warning: dereferencing type-punned pointer will break strict-aliasing rules
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/fntstore.h:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/w32std.h:25,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/coemain.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/mw/akndiscreetpopup.h:25,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/f32file.h: At global scope:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/f32file.h:2284: warning: invalid access to non-static data member 'TVolFormatParam::iUId'  of NULL object
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/f32file.h:2284: warning: (perhaps the 'offsetof' macro was used incorrectly)
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/fntstore.h:28,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/w32std.h:25,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/coemain.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/mw/akndiscreetpopup.h:25,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/openfont.h: In static member function 'static CShaperFactory* CShaperFactory::NewL(TUid)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/openfont.h:2464: warning: invalid access to non-static data member 'CShaperFactory::iDtor_ID_Key'  of NULL object
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/openfont.h:2464: warning: (perhaps the 'offsetof' macro was used incorrectly)
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/gulalign.h:25,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/coetextdrawer.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/mw/coemain.h:28,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/platform/mw/akndiscreetpopup.h:25,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/app/notifier.cpp:10:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/biditext.h: At global scope:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/biditext.h:25: warning: declaration 'enum CGraphicsContext::TTextAlign' does not declare anything
+   
+ compile    : src\core\icqpackets.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbytearray.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QByteArray:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqpackets.h:11,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqpackets.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QString:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqpackets.h:12,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqpackets.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QString:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqpackets.h:12,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqpackets.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   
+ compile    : src\core\icqsession.cpp  	[arm.v5.urel.gcce4_4_1]
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32cmn.h:1129,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32std.h:31,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_symbian.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic_arch.h:86,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbasicatomic.h:227,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qatomic.h:46,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qbytearray.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QByteArray:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtypes.h:8,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqsession.h:19,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqsession.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/e32des8.h:230: note: the mangling of 'va_list' has changed in GCC 4.4
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.h:194,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.c:26,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_ostream.h:385,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:23,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qdatetime.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QDateTime:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtypes.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqsession.h:19,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqsession.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c: In function '_OutputIter stlp_priv::__copy_integer_and_fill(const _CharT*, ptrdiff_t, _OutputIter, int, std::streamsize, _CharT, _CharT, _CharT)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_num_put.c:162: warning: suggest parentheses around '&&' within '||'
+   In file included from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.h:355,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_string_io.h:27,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/string:38,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qstring.h:60,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/qdatetime.h:45,
+                    from D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/include/QtCore/QDateTime:1,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqtypes.h:9,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqsession.h:19,
+                    from D:/GitHub/SymnokRepos/JasmineKICQ/src/core/icqsession.cpp:3:
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c: In function 'std::streamsize stlp_priv::__read_buffered(std::basic_istream<_CharT, _Traits>*, std::basic_streambuf<_CharT, _Traits>*, std::streamsize, _CharT*, _Is_Delim, _Scan_Delim, bool, bool, bool)':
+   D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/include/stdapis/stlportv5/stl/_istream.c:650: warning: suggest parentheses around '&&' within '||'
+   
+ target     : epoc32\release\armv5\urel\JasmineKICQ.exe  	[arm.v5.urel.gcce4_4_1]
+   d:/qtsdk/symbian/tools/gcce4/bin/../lib/gcc/arm-none-symbianelf/4.4.1/../../../../arm-none-symbianelf/bin/ld.exe: warning: D:/QtSDK/Symbian/SDKs/SymbianSR1Qt474/epoc32/release/armv5/urel/usrt3_1.lib(ucppinit.o) uses variable-size enums yet the output is to use 32-bit enums; use of enum values across objects may fail
+   
+
+sbs : warnings: 16
+sbs : errors: 0
+
+built 'arm.v5.urel.gcce4_4_1'
+
+Run time 6 seconds
+
+sbs: build log in D:\QtSDK\Symbian\SDKs\SymbianSR1Qt474\epoc32\build\Makefile.2026-09-21-16-41-02.9-420.log
+Auto-patching self-signed package.
+
+Patching package file and relevant binaries...
+
+No patching was required!
+
+Processing JasmineKICQ_release-armv5.pkg...
+Created  JasmineKICQ_unsigned.sis.
+Successfully created signed package JasmineKICQ.sis for release-armv5 using certificate: Self Signed!
+
+Processing JasmineKICQ_installer___temp.pkg...
+Created  JasmineKICQ_installer_unsigned.sis.
+Successfully created signed package JasmineKICQ_installer.sis for release-armv5 using certificate: Self Signed!
+
+built JasmineKICQ_0.1.15.sis 
+built JasmineKICQ_installer_0.1.15.sis 

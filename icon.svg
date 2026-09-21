@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="tiny" width="88" height="88" viewBox="0 0 88 88">
+  <!-- Jasmine's flower: five pale-blue petals around a yellow heart, on a dark rounded tile. -->
+  <rect x="2" y="2" width="84" height="84" rx="14" ry="14" fill="#1c2a3a"/>
+  <g transform="translate(44,44)">
+    <g fill="#cfe4f5" stroke="#8fb7d9" stroke-width="1.5">
+      <ellipse cx="0" cy="-22" rx="9.5" ry="20"/>
+      <ellipse cx="0" cy="-22" rx="9.5" ry="20" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-22" rx="9.5" ry="20" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-22" rx="9.5" ry="20" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-22" rx="9.5" ry="20" transform="rotate(288)"/>
+    </g>
+    <g fill="#eef6fc">
+      <ellipse cx="0" cy="-24" rx="4" ry="12"/>
+      <ellipse cx="0" cy="-24" rx="4" ry="12" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-24" rx="4" ry="12" transform="rotate(144)"/>
+      <ellipse cx="0" cy="-24" rx="4" ry="12" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-24" rx="4" ry="12" transform="rotate(288)"/>
+    </g>
+    <circle cx="0" cy="0" r="8" fill="#f5c542" stroke="#d9a520" stroke-width="1.5"/>
+    <circle cx="-2.5" cy="-2.5" r="2.5" fill="#fff1b8"/>
+  </g>
+</svg>
